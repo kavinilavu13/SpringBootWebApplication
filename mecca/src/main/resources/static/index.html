@@ -1,0 +1,256 @@
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Spring Boot - AJAX POST GET Example</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<h3 style="color: blue">POST-GET AJAX NESTED OBJECT</h3>
+
+		<div class="row col-md-6">
+			<form id="customerForm">
+				<div class="form-group">
+					<label for="name">Name:</label> <input type="text"
+						class="form-control" id="name" placeholder="Enter Name" />
+				</div>
+				<div class="form-group">
+					<label for="age">Age:</label> <input type="number" min="18"
+						max="100" class="form-control" id="age" placeholder="Enter Age" />
+				</div>
+				<div class="form-group">
+					<label for="street">Street:</label> <input type="text"
+						class="form-control" id="street" placeholder="Enter Street" />
+				</div>
+				<div class="form-group">
+					<label for="postcode">PostCode:</label> <input type="text"
+						class="form-control" id="postcode" placeholder="Enter PostCode" />
+				</div>
+				<button style="margin-bottom: 10px" type="submit"
+					class="btn btn-default">Add Customer</button>
+			</form>
+
+			<!-- Table of Adding Customer -->
+			<table id="customerTable" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Street</th>
+						<th>Postcode</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			<!-- DIV Submit customer  -->
+			<!-- SUBMIT Customer Button to Server -->
+			<button id="postCustomersBtn" style="margin-bottom: 10px"
+				type="submit" class="btn btn-default">Post Customers</button>
+
+			<!-- Message result from server -->
+			<div id="postResultDiv" style="margin: 10px 0px 10px 0px;"></div>
+
+
+			<!-- Get All Customers from back-end -->
+			<button id="getAllCustomersBtnId" type="button"
+				class="btn btn-primary" style="margin: 10px 0px 10px 0px;">Get
+				All Customers</button>
+			<div id="resultGetAllCustomerDiv">
+				<ul class="list-group">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+	$( "#postCustomersBtn" ).click(function() {
+		var arr = {
+				name : 'Moscow',
+				password : "25"
+			};
+		alert(arr);
+			$.ajax({
+				url : 'profile',
+				type : 'POST',
+				data : JSON.stringify(arr),
+				contentType : 'application/json; charset=utf-8',
+				dataType : 'json',
+				async : false,
+				success : function(msg) {
+					alert(msg);
+				}
+			});
+		});
+	</script>
+
+	<script>
+		
+	</script>
+	<!-- <script>
+$( document ).ready(function() {
+	
+	var listCustomers = [];
+
+	/**
+	 * Using JQuery for hiding some elements in view when bootstrap app
+	 */
+	// Hide customer table when starting
+	// we just show it if having any adding-customer
+	$('#customerTable').hide();
+	$('#postCustomersBtn').hide();
+	
+	// Customer-Form submit
+    $("#customerForm").submit(function(event) {
+		// Prevent the form from submitting via the browser.
+		event.preventDefault();
+		
+		// get data from submit form
+		
+		var formCustomer = {
+    			name : $("#name").val(),
+    			age : $("#age").val(),
+    			address : {
+    		    	street : $("#street").val(),
+    		    	postcode : $("#postcode").val()
+    		    }
+    	}
+		
+		// store customer
+		listCustomers.push(formCustomer);
+		
+		// re-render customer table by append new customer to table
+		
+		var customerRow = '<tr>' +
+							'<td>' + listCustomers.length + '</td>' +
+							'<td>' + formCustomer.name.toUpperCase() + '</td>' +
+							'<td>' + formCustomer.age + '</td>' +
+							'<td>' + formCustomer.address.street + '</td>' +
+							'<td>' + formCustomer.address.postcode + '</td>' +
+					        '<td class="text-center">' +
+					        	'<input type="hidden" value=' + (listCustomers.length - 1) + '>' +
+					        	'<a>' +
+					  				'<span class="glyphicon glyphicon-remove"></span>' +
+								'</a>' +
+					        '</td>' +
+						  '</tr>';
+
+		$('#customerTable tbody').append(customerRow);
+
+		// just how customer table and POST button
+		$('#customerTable').show();
+		$('#postCustomersBtn').show();
+		
+		// Reset FormData after Posting
+    	resetData();
+	});
+    
+	// Do DELETE a Customer via JQUERY AJAX
+	$(document).on("click","a",function() {
+		var customerId = $(this).parent().find('input').val();
+		$(this).closest("tr").remove()
+	});
+	
+	// Submit List of Customer to Back-End server
+	$('#postCustomersBtn').click(function(){
+		ajaxPost();
+	});
+	
+    function ajaxPost(){
+    	
+    	// DO POST
+    	$.ajax({
+			type : "POST",
+			contentType : "application/json",
+			accept: 'text/plain',
+			url :  "profile",
+			data : JSON.stringify(formCustomer),
+			dataType: 'text',
+			success : function(result) {
+				// clear customer body
+				$('#customerTable tbody').empty();
+				$('#customerTable').hide();
+				
+				// re-set customer table list
+				listCustomers = [];
+				
+				// fill successfully message on view
+				$("#postResultDiv").html("<p style='background-color:#7FA7B0; color:white; padding:20px 20px 20px 20px'>" + 
+											result +
+										  "</p>");
+			},
+			error : function(e) {
+				alert("Error!")
+				console.log("ERROR: ", e);
+			}
+		});
+    }
+    
+    function resetData(){
+    	$("#name").val("");
+    	$("#age").val("");
+    	$("#street").val("");
+    	$("#postcode").val("");
+    }
+})
+</script>
+<script>
+$( document ).ready(function() {
+	
+	// GET REQUEST
+	$("#getAllCustomersBtnId").click(function(event){
+		event.preventDefault();
+		ajaxGet();
+	});
+	
+	// DO GET
+	function ajaxGet(){
+		$.ajax({
+			type : "GET",
+			url : window.location + "api/customer/all",
+			success: function(result){
+					$('#resultGetAllCustomerDiv ul').empty();
+					var custList = "";
+					$.each(result, function(i, customer){
+						var customer = "{name: " + customer.name + 
+						", age: " + customer.age +
+						", street: " + customer.address.street +
+						", postcode: " + customer.address.postcode +"}";
+						
+						$('#resultGetAllCustomerDiv .list-group').append("<li>" + customer + "</li>");
+			        });
+					
+					// just re-css for result-div
+					$('#resultGetAllCustomerDiv').css({'background-color':'#D16953', 'color':'white', 'padding':'20px 20px 5px 30px'});
+					
+					// just hide POST button
+					if($('#customerTable').is(":hidden")){
+						$('#postCustomersBtn').hide();	
+					}
+			},
+			error : function(e) {
+				$("#getResultDiv").html("<strong>Error</strong>");
+				console.log("ERROR: ", e);
+			}
+		});
+	}
+})
+</script>
+ -->
+
+
+</body>
+</html>
