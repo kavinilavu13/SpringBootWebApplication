@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<title>PlexusSquare</title>
+<link rel="apple-touch-icon"
+	href="app-assets/images/ico/apple-icon-120.png">
+	<link href="css/font_css.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="admin_css/vendors.css">
+<link rel="stylesheet" type="text/css" href="admin_css/app.css">
+<link rel="stylesheet" type="text/css"
+	href="admin_css/palette-gradient.css">
+<link rel="stylesheet" href="admin_css/sweetalert.css" />
+<style>
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('./images/loadings.gif') 50% 50% no-repeat
+		rgb(249, 249, 249);
+	opacity: .2;
+}
+</style>
+</head>
+<body
+	class="vertical-layout vertical-menu 1-column  bg-full-screen-image menu-expanded blank-page blank-page"
+	data-open="click" data-menu="vertical-menu"
+	data-color="bg-gradient-x-purple-blue" data-col="1-column"
+	style="overflow: auto;">
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+	<div class="loader"></div>
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row"></div>
+
+			<div class="content-body" style="padding: 0.5rem;">
+				<section class="flexbox-container" style="height: 137vh;">
+					<div
+						class="col-12 d-flex align-items-center justify-content-center">
+						<div class="col-md-4 col-10 box-shadow-2 p-0">
+							<div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+								<div class="card-header border-0">
+									<div class="text-center mb-1">
+										<img src="logo/companylogo.png" alt="branding logo"
+											style="height: 120px; width: 160px;">
+									</div>
+									<div class="font-large-1  text-center">Member Register</div>
+								</div>
+								<div class="card-content">
+									<div class="card-body">
+										<form class="form-horizontal" id="register" method="post"
+											autocomplete="off" style="margin-top: -20px;">
+
+											<label for="complaintinput1">Name</label>
+											<fieldset class="form-group position-relative has-icon-left">
+												<input type="text" class="form-control round" id="name"
+													placeholder="Your Name" required pattern="[A-Za-z\s]{1,25}"
+													title="Its Allowed 25 character">
+												<div class="form-control-position">
+													<i class="ft-user"></i>
+												</div>
+											</fieldset>
+											<label for="complaintinput1">Mobile Number</label>
+											<fieldset class="form-group position-relative has-icon-left">
+												<input type="text" class="form-control round"
+													id="mobilenumber" placeholder="Your Mobile Number"
+													required="required" 
+													pattern="[0-9]{10}"
+													title="Its Allowed 10 Digit Number Only">
+												<div class="form-control-position">
+													<i class="ft-phone"></i>
+												</div>
+											</fieldset>
+											<label for="complaintinput1">Email-Id</label>
+											<fieldset class="form-group position-relative has-icon-left">
+												<input type="email" class="form-control round" id="emailid"
+													placeholder="Your Email Address" required="required" />
+												<div class="form-control-position">
+													<i class="ft-mail"></i>
+												</div>
+											</fieldset>
+											<label for="complaintinput1">Password</label>
+											<fieldset class="form-group position-relative has-icon-left">
+
+												<input type="password" class="form-control round"
+													name="password" id="password" placeholder="Password"
+													required data-toggle="tooltip" data-html="true"
+													data-placement="top"
+													title="# Minimum Password length : 8 <br> # Password should consist of 1 UpperCase Alphabet, 1 LowerCase Alphabet, 1 Numeric and 1 Special Character(!@#$&) <br> # Has not been used in previous 0 Passwords"
+													minlength="8"
+													pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$&])[^\s]{8,}$">
+												<div class="form-control-position">
+													<i class="ft-lock"></i>
+												</div>
+											</fieldset>
+											<label for="complaintinput1">Confirm-Password</label>
+											<fieldset class="form-group position-relative has-icon-left">
+
+												<input type="password" class="form-control round"
+													name="password" placeholder="Confirm Password"
+													id="cpassword"
+													title="Please enter the same Password as above."
+													minlength="8" required
+													pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$&])[^\s]{8,}$"
+													onchange="validatePassword()">
+
+												<div class="form-control-position">
+													<i class="ft-lock"></i>
+												</div>
+											</fieldset>
+											<div class="form-group text-center">
+												<button type="submit"
+													class="btn round btn-block btn-glow btn-bg-gradient-x-purple-blue col-12 mr-1 mb-1">Register</button>
+											</div>
+											<p
+												class="card-subtitle text-muted text-right font-small-3 mx-2 my-1">
+												<span>Already a member ? <a href="index.html"
+													class="card-link">Sign In</a>
+												</span>
+											</p>
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+	<!-- BEGIN VENDOR JS-->
+	<script src="admin_js/vendors.min.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">	
+			$(".loader").hide();
+	</script>
+	<script src="admin_js/sweetalert.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			window.history.pushState(null, "", window.location.href);
+			window.onpopstate = function() {
+				window.history.pushState(null, "", window.location.href);
+			};
+
+		});
+	</script>
+
+	<script>
+		var password = document.getElementById("password").value;
+		var confirm_password = document.getElementById("cpassword").value;
+
+		function validatePassword() {
+			var password = document.getElementById("password").value;
+			var confirm_password = document.getElementById("cpassword").value;
+			//alert(password);
+			if (password === confirm_password) {
+				// alert("Passwords Match");
+				var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$&])[^\s]{8,}$/;
+				if (pattern.test(password)) {
+					// alert("Match");
+					return true;
+				} else {
+					swal(
+							'Oops..!',
+							'Password must contain at least 8 characters, including UPPER/Lowercase and atleast One Special Character and Number',
+							'error');
+					//alert("Password must contain at least 8 characters, including UPPER/LOWERCASE and atleast One Special Character and Number");
+					document.getElementById("password").value = "";
+					document.getElementById("cpassword").value = "";
+					return false;
+				}
+			} else {
+				// alert("Please enter the same Password as above.");
+				swal('Oops..!', 'Please enter the same Password as above.',
+						'error');
+				document.getElementById("password").value = "";
+				document.getElementById("cpassword").value = "";
+
+			}
+		}
+		password.onchange = validatePassword;
+		confirm_password.onkeyup = validatePassword;
+	</script>
+		<script src="adminjs/register.js" type="text/javascript"></script>
+</body>
+</html>

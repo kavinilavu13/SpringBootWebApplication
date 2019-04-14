@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="description"
+	content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
+<meta name="keywords"
+	content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
+<meta name="author" content="ThemeSelect">
+<title>Building details-mecca.com</title>
+<link rel="apple-touch-icon"
+	href="app-assets/images/ico/apple-icon-120.png">
+<link rel="shortcut icon" type="image/x-icon"
+	href="app-assets/images/ico/favicon.ico">
+<link
+	href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+	rel="stylesheet">
+<link
+	href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
+	rel="stylesheet">
+<!-- BEGIN VENDOR CSS-->
+<link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
+<link rel="stylesheet" type="text/css"
+	href="app-assets/vendors/js/gallery/photo-swipe/photoswipe.css">
+<link rel="stylesheet" type="text/css"
+	href="app-assets/vendors/js/gallery/photo-swipe/default-skin/default-skin.css">
+<!-- END VENDOR CSS-->
+<!-- BEGIN CHAMELEON  CSS-->
+<link rel="stylesheet" type="text/css" href="app-assets/css/app.css">
+<!-- END CHAMELEON  CSS-->
+<!-- BEGIN Page Level CSS-->
+<link rel="stylesheet" type="text/css"
+	href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+<link rel="stylesheet" type="text/css"
+	href="app-assets/css/core/colors/palette-gradient.css">
+<link rel="stylesheet" type="text/css"
+	href="app-assets/css/pages/gallery.css">
+<!-- END Page Level CSS-->
+<!-- BEGIN Custom CSS-->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- END Custom CSS-->
+<link rel="stylesheet" href="sweetalert/sweetalert.css" />
+<style>
+input[type="file"] {
+	/*   display: none; */
+	line-height: 33px;
+	border: 10px slide;
+	border: 1px solid #babfc7;
+	width: 100%;
+}
+
+.fixeddelete {
+	position: fixed;
+	bottom: 3px;
+	right: 145px;
+}
+
+.fixedbutton {
+	position: fixed;
+	bottom: 3px;
+	right: 23px;
+}
+</style>
+</head>
+<body
+	class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar"
+	data-open="click" data-menu="vertical-menu"
+	data-color="bg-gradient-x-purple-blue" data-col="2-columns">
+
+
+	<nav
+		class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+		<div class="navbar-wrapper">
+			<div class="navbar-container content">
+				<div class="collapse navbar-collapse show" id="navbar-mobile">
+					<ul class="nav navbar-nav mr-auto float-left">
+						<li class="nav-item mobile-menu d-md-none mr-auto"><a
+							class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+								class="ft-menu font-large-1"></i></a></li>
+						<li class="nav-item d-none d-md-block"><a
+							class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+								class="ft-menu"></i></a></li>
+						<li class="nav-item d-none d-md-block"><a
+							class="nav-link nav-link-expand" href="#"><i
+								class="ficon ft-maximize"></i></a></li>
+						<li class="dropdown nav-item mega-dropdown d-none d-md-block"><a
+							class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Mega</a>
+							<ul class="mega-dropdown-menu dropdown-menu row">
+								<li class="col-md-2">
+									<h6 class="dropdown-menu-header text-uppercase mb-1">
+										<i class="ft-link"></i> Quick Links
+									</h6>
+									<ul>
+										<li><a class="my-1" href="#"><i class="ft-home mr-1"></i>
+												Dashboard</a></li>
+										<li><a class="my-1" href="#"><i
+												class="ft-layers mr-1"></i> Email Application</a></li>
+										<li><a class="my-1" href="#"><i
+												class="ft-message-square mr-1"></i> Chat Application</a></li>
+										<li><a class="my-1" href="#"><i class="ft-edit mr-1"></i>
+												Form Wizard</a></li>
+										<li><a class="my-1" href="#"><i class="ft-grid mr-1"></i>
+												Tables</a></li>
+										<li><a class="my-1" href="#"><i
+												class="ft-bar-chart mr-1"></i> Chartist</a></li>
+										<li><a class="my-1" href="#"><i
+												class="ft-sidebar mr-1"></i> Gallery Page</a></li>
+									</ul>
+								</li>
+								<li class="col-md-3">
+									<h6 class="dropdown-menu-header text-uppercase mb-1">
+										<i class="ft-star"></i> My Bookmarks
+									</h6>
+									<ul class="ml-2">
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Advanced Cards</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Left sidebar</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Sticky left sidebar</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Right sidebar</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Sticky right sidebar</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Fixed Navbar & Navigation</a></li>
+										<li class="list-style-circle"><a class="my-1" href="#">
+												Fixed Navbar & Footer </a></li>
+									</ul>
+								</li>
+								<li class="col-md-3">
+									<h6 class="dropdown-menu-header text-uppercase">
+										<i class="ft-layers"></i> Recent Products
+									</h6>
+									<div class="carousel slide pt-1" id="carousel-example"
+										data-ride="carousel">
+										<div class="carousel-inner" role="listbox">
+											<div class="carousel-item active">
+												<img class="d-block w-100"
+													src="app-assets/images/carousel/08.jpg" alt="First slide">
+											</div>
+											<div class="carousel-item">
+												<img class="d-block w-100"
+													src="app-assets/images/carousel/03.jpg" alt="Second slide">
+											</div>
+											<div class="carousel-item">
+												<img class="d-block w-100"
+													src="app-assets/images/carousel/01.jpg" alt="Third slide">
+											</div>
+										</div>
+										<a class="carousel-control-prev" href="#carousel-example"
+											role="button" data-slide="prev"><span
+											class="la la-angle-left" aria-hidden="true"></span><span
+											class="sr-only">Previous</span></a><a
+											class="carousel-control-next" href="#carousel-example"
+											role="button" data-slide="next"><span
+											class="la la-angle-right icon-next" aria-hidden="true"></span><span
+											class="sr-only">Next</span></a>
+										<h5 class="pt-1">Special title treatment</h5>
+										<p>Jelly beans sugar plum.</p>
+									</div>
+								</li>
+								<li class="col-md-4">
+									<h6 class="dropdown-menu-header text-uppercase mb-1">
+										<i class="ft-thumbs-up"></i> Get in touch
+									</h6>
+									<form class="form form-horizontal pt-1">
+										<div class="form-body">
+											<div class="form-group row">
+												<label class="col-sm-3 form-control-label" for="inputName1">Name</label>
+												<div class="col-sm-9">
+													<div class="position-relative has-icon-left">
+														<input class="form-control" id="inputName1" type="text"
+															placeholder="John Doe">
+														<div class="form-control-position pl-1">
+															<i class="ft-user"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-3 form-control-label"
+													for="inputContact1">Contact</label>
+												<div class="col-sm-9">
+													<div class="position-relative has-icon-left">
+														<input class="form-control" id="inputContact1" type="text"
+															placeholder="(123)-456-7890">
+														<div class="form-control-position pl-1">
+															<i class="ft-smartphone"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-3 form-control-label" for="inputEmail1">Email</label>
+												<div class="col-sm-9">
+													<div class="position-relative has-icon-left">
+														<input class="form-control" id="inputEmail1" type="email"
+															placeholder="john@example.com">
+														<div class="form-control-position pl-1">
+															<i class="ft-mail"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-3 form-control-label"
+													for="inputMessage1">Message</label>
+												<div class="col-sm-9">
+													<div class="position-relative has-icon-left">
+														<textarea class="form-control" id="inputMessage1" rows="2"
+															placeholder="Simple Textarea"></textarea>
+														<div class="form-control-position pl-1">
+															<i class="ft-message-circle"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12 mb-1">
+													<button class="btn btn-danger float-right" type="button">
+														<i class="ft-arrow-right"></i> Submit
+													</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</li>
+							</ul></li>
+						<li class="dropdown d-none d-md-block mr-1"><a
+							class="dropdown-toggle nav-link" id="apps-navbar-links" href="#"
+							data-toggle="dropdown"> Apps</a>
+							<div class="dropdown-menu">
+								<div class="arrow_box">
+									<a class="dropdown-item" href="email-application.html"><i
+										class="ft-user"></i> Email</a><a class="dropdown-item"
+										href="chat-application.html"><i class="ft-mail"></i> Chat</a><a
+										class="dropdown-item" href="project-summary.html"><i
+										class="ft-briefcase"></i> Project Summary </a><a
+										class="dropdown-item" href="full-calender.html"><i
+										class="ft-calendar"></i> Calendar </a>
+								</div>
+							</div></li>
+						<li class="nav-item dropdown navbar-search"><a
+							class="nav-link dropdown-toggle hide" data-toggle="dropdown"
+							href="#"><i class="ficon ft-search"></i></a>
+							<ul class="dropdown-menu">
+								<li class="arrow_box">
+									<form>
+										<div class="input-group search-box">
+											<div class="position-relative has-icon-right full-width">
+												<input class="form-control" id="search" type="text"
+													placeholder="Search here...">
+												<div class="form-control-position navbar-search-close">
+													<i class="ft-x"></i>
+												</div>
+											</div>
+										</div>
+									</form>
+								</li>
+							</ul></li>
+					</ul>
+					<ul class="nav navbar-nav float-right">
+						<li class="dropdown dropdown-language nav-item"><a
+							class="dropdown-toggle nav-link" id="dropdown-flag" href="#"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+								class="flag-icon flag-icon-us"></i><span
+								class="selected-language"></span></a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-flag">
+								<div class="arrow_box">
+									<a class="dropdown-item" href="#"><i
+										class="flag-icon flag-icon-us"></i> English</a><a
+										class="dropdown-item" href="#"><i
+										class="flag-icon flag-icon-cn"></i> Chinese</a><a
+										class="dropdown-item" href="#"><i
+										class="flag-icon flag-icon-ru"></i> Russian</a><a
+										class="dropdown-item" href="#"><i
+										class="flag-icon flag-icon-fr"></i> French</a><a
+										class="dropdown-item" href="#"><i
+										class="flag-icon flag-icon-es"></i> Spanish</a>
+								</div>
+							</div></li>
+						<li class="dropdown dropdown-notification nav-item"><a
+							class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
+								class="ficon ft-bell bell-shake" id="notification-navbar-link"></i><span
+								class="badge badge-pill badge-sm badge-danger badge-default badge-up badge-glow">5</span></a>
+							<ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+								<div class="arrow_box_right">
+									<li class="dropdown-menu-header">
+										<h6 class="dropdown-header m-0">
+											<span class="grey darken-2">Notifications</span>
+										</h6>
+									</li>
+									<li class="scrollable-container media-list w-100"><a
+										href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left align-self-center">
+													<i class="ft-share info font-medium-4 mt-2"></i>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading info">New Order Received</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Lorem
+														ipsum dolor sit amet!</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">3:30 PM</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left align-self-center">
+													<i class="ft-save font-medium-4 mt-2 warning"></i>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading warning">New User Registered</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Aliquam
+														tincidunt mauris eu risus.</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">10:05 AM</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left align-self-center">
+													<i class="ft-repeat font-medium-4 mt-2 danger"></i>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading danger">New Purchase</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Lorem
+														ipsum dolor sit ametest?</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">Yesterday</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left align-self-center">
+													<i class="ft-shopping-cart font-medium-4 mt-2 primary"></i>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading primary">New Item In Your
+														Cart</h6>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left align-self-center">
+													<i class="ft-heart font-medium-4 mt-2 info"></i>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading info">New Sale</h6>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+												</div>
+											</div>
+									</a></li>
+									<li class="dropdown-menu-footer"><a
+										class="dropdown-item info text-right pr-1"
+										href="javascript:void(0)">Read all</a></li>
+								</div>
+							</ul></li>
+						<li class="dropdown dropdown-notification nav-item"><a
+							class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
+								class="ficon ft-mail"> </i></a>
+							<ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+								<div class="arrow_box_right">
+									<li class="dropdown-menu-header">
+										<h6 class="dropdown-header m-0">
+											<span class="grey darken-2">Messages</span>
+										</h6>
+									</li>
+									<li class="scrollable-container media-list w-100"><a
+										href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left">
+													<span class="avatar avatar-sm rounded-circle"><img
+														src="app-assets/images/portrait/small/avatar-s-6.png"
+														alt="avatar"></span>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading text-bold-700">
+														Sarah Montery<i
+															class="ft-circle font-small-2 success float-right"></i>
+													</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Everything
+														looks good. I will provide...</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">3:55 PM</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left">
+													<span class="avatar avatar-sm rounded-circle"><span
+														class="media-object rounded-circle text-circle bg-warning">E</span></span>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading text-bold-700">
+														Eliza Elliot<i
+															class="ft-circle font-small-2 danger float-right"></i>
+													</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Okay.
+														here is some more details...</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">2:10 AM</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left">
+													<span class="avatar avatar-sm rounded-circle"><img
+														src="app-assets/images/portrait/small/avatar-s-3.png"
+														alt="avatar"></span>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading text-bold-700">
+														Kelly Reyes<i
+															class="ft-circle font-small-2 warning float-right"></i>
+													</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">Check
+														once and let me know if you...</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">Yesterday</time></small>
+												</div>
+											</div>
+									</a><a href="javascript:void(0)">
+											<div class="media">
+												<div class="media-left">
+													<span class="avatar avatar-sm rounded-circle"><img
+														src="app-assets/images/portrait/small/avatar-s-19.png"
+														alt="avatar"></span>
+												</div>
+												<div class="media-body">
+													<h6 class="media-heading text-bold-700">
+														Tonny Deep<i
+															class="ft-circle font-small-2 danger float-right"></i>
+													</h6>
+													<p
+														class="notification-text font-small-3 text-muted text-bold-600">We
+														will start new project development...</p>
+													<small> <time class="media-meta text-muted"
+															datetime="2015-06-11T18:29:20+08:00">Friday</time></small>
+												</div>
+											</div>
+									</a></li>
+									<li class="dropdown-menu-footer"><a
+										class="dropdown-item text-right info pr-1"
+										href="javascript:void(0)">Read all</a></li>
+								</div>
+							</ul></li>
+						<li class="dropdown dropdown-user nav-item"><a
+							class="dropdown-toggle nav-link dropdown-user-link" href="#"
+							data-toggle="dropdown"> <span class="avatar avatar-online"><img
+									src="app-assets/images/portrait/small/avatar-s-19.png"
+									alt="avatar"></span></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="arrow_box_right">
+									<a class="dropdown-item" href="#"><span
+										class="avatar avatar-online"><img
+											src="app-assets/images/portrait/small/avatar-s-19.png"
+											alt="avatar"><span class="user-name text-bold-700 ml-1">John
+												Doe</span></span></a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ft-user"></i>
+										Edit Profile</a><a class="dropdown-item" href="#"><i
+										class="ft-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i
+										class="ft-check-square"></i> Task</a><a class="dropdown-item"
+										href="#"><i class="ft-message-square"></i> Chats</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ft-power"></i>
+										Logout</a>
+								</div>
+							</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<div
+		class="main-menu menu-fixed menu-light menu-accordion    menu-shadow "
+		data-scroll-to-active="true"
+		data-img="app-assets/images/backgrounds/02.jpg">
+		<div class="navbar-header">
+			<ul class="nav navbar-nav flex-row">
+				<li class="nav-item mr-auto"><a class="navbar-brand" href="#"><img
+						class="brand-logo" alt="Chameleon admin logo" src="logo/logo.png"
+						style="height: 34px; width: 55px;" />
+						<h3 class="brand-text">PLEXUSSQUARE</h3></a></li>
+				<li class="nav-item d-md-none"><a class="nav-link close-navbar"><i
+						class="ft-x"></i></a></li>
+			</ul>
+		</div>
+		<div class="main-menu-content">
+			<ul class="navigation navigation-main" id="main-menu-navigation"
+				data-menu="menu-navigation">
+				<li class=" nav-item"><a href="#"><i class="ft-home"></i><span
+						class="menu-title" data-i18n="">Dashboard</span></a></li>
+				<li class=" nav-item"><a href="#"><i class="ft-layers"></i><span
+						class="menu-title" data-i18n="">Building Info</span></a>
+					<ul class="menu-content" class="active">
+						<li ><a class="menu-item"
+							href="AddBuildingDetails.html"> Add Buildings </a></li>
+						<li class="active"><a class="menu-item" href="BuildingDetails.html">
+								 Building Profile</a></li>
+						<li><a class="menu-item" href="BuildingList.html">
+								Building List</a></li>
+						<!-- <li><a class="menu-item" href="buildingdocuments.html">
+								Buildings Documents</a></li>
+						<li><a class="menu-item" href="buildingphotos.html">
+								Buildings Photos</a></li> -->
+					</ul></li>
+			</ul>
+		</div>
+		<div class="navigation-background"></div>
+	</div>
+
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">Building Profile</h3>
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Building
+										Profile</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<!-- Description -->
+
+				<form action="UpdateBuildingDetails" method="post"
+					enctype="multipart/form-data" name="form1" id="form1"
+					autocomplete="off">
+
+					<section id="description" class="card">
+						<div class="card-header">
+							<h4 class="card-title">Building Profile</h4>
+							<a class="heading-elements-toggle"><i
+								class="la la-ellipsis-v font-medium-3"></i></a>
+							<div class="heading-elements">
+								<ul class="list-inline mb-0">
+									<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+									<li><a data-action="close"><i class="ft-x"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-content collapse show">
+							<div class="card-body">
+								<div class="form-body">
+									<h4 class="form-section">
+										<i class="la la-building"></i> Basic Details
+									</h4>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Building Name</label> <input
+													type="text" id="building_name" class="form-control"
+													placeholder="Building Name" name="bulidingname" required
+													pattern="[A-Za-z0-9_]{1,25}"
+													title="Its Allowed 25 character">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Date of Establishment</label> <input
+													type="date" id="doe" class="form-control" placeholder="DOE"
+													name="doe" required>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Building Email Id</label> <input
+													type="email" id="email_id" class="form-control"
+													placeholder="Building Email Id" name="email_id" readonly>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Mobile Number</label> <input
+													type="number" id="mobile_number" class="form-control"
+													placeholder="Mobile Number" name="mobilenumber" required
+													pattern="[0-9]{10}"
+													title="Its Allowed 10 Digit Number Only">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyinput5">Owner Name</label> <select
+													id="owner_id" name="owner_id" class="form-control" required>
+													<option value="">--Select Name--</option>
+													<option value="Harsit">Harsit</option>
+													<option value="Jain">Jain</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyinput6">Number Of Floor</label> <select
+													id="no_of_floor" name="no_of_floor" class="form-control"
+													required>
+													<option value="">--Select Floor--</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+												</select>
+											</div>
+
+										</div>
+									</div>
+									<h4 class="form-section">
+										<i class="la la-bank"></i> Building Address
+									</h4>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Street address</label> <input
+													type="text" id="street_address" class="form-control"
+													placeholder=" Street address" name="street_address"
+													required pattern="[A-Za-z0-9_]{1,50}"
+													title="Its Allowed 25 character">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Area</label> <input type="text"
+													id="area" class="form-control" placeholder="Area"
+													name="area" required pattern="[A-Za-z0-9_]{1,50}"
+													title="Its Allowed 25 character">
+											</div>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">City/Town</label> <input
+													type="text" id="city" class="form-control"
+													placeholder="City/Town" name="city" required
+													pattern="[A-Za-z0-9_]{1,50}"
+													title="Its Allowed 50 character">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Zip code</label> <input
+													type="text" id="zip_code" class="form-control"
+													placeholder="Building Zip code" name="Zip_code" 
+													pattern="[0-9]{6}" 
+													title="Its Allowed 6 Digit Number Only">
+											</div>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="companyName">Country</label> <input type="text"
+													id="country" class="form-control" placeholder="Country"
+													name="Country" required pattern="[A-Za-z0-9_]{1,25}"
+													title="Its Allowed 25 character">
+											</div>
+										</div>
+									</div>
+
+
+									<h4 class="form-section">
+										<i class=" ft-file"></i> Building Documents
+									</h4>
+
+									<div class="row">
+										<div class="col-md-6">
+
+											<div class="form-group">
+												<label for="companyName">Agreement</label>
+												<div class="custom-file">
+
+													<input type="file" id="agreement" name="Agreement"
+														class="inputfile" value="Agreement.pdf">
+												</div>
+											</div>
+
+										</div>
+										<div class="col-md-6">
+
+
+											<div class="form-group">
+												<label for="companyinput1">Certificate</label>
+												<div class="custom-file">
+
+													<input type="file" id="certificate" name="Certificate"
+														class="inputfile" value="Certificate.pdf">
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label for="companyinput8">Building Description</label>
+												<textarea id="description" rows="4" cols="50"
+													class="form-control" placeholder="About Building"
+													name="description" required></textarea>
+											</div>
+										</div>
+
+									</div>
+
+
+
+								</div>
+						<div class="form-actions ">
+										<!-- <button type="button" class="btn btn-danger mr-1">
+													<i class="ft-x"></i> Cancel
+												</button>
+									<button type="submit" name="submit" class="btn btn-primary fixedbutton">
+													<i class="la la-check-square-o"></i> Save
+												</button> -->
+									<button type="submit"
+										class="btn btn-glow btn-bg-gradient-x-purple-blue col-12 col-md-1 mr-1 mb-1 fixedbutton">Update</button>
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+					</section>
+					<!--/ Description -->
+
+					<!-- Image grid -->
+					<section id="image-gallery" class="card">
+						<div class="card-header">
+							<h4 class="card-title text-muted position-absolut">Building
+								Images</h4>
+							<!-- <h4 class="text-muted info position-absolute p-1 card-title">Building Images</h4> -->
+							<a class="heading-elements-toggle"><i
+								class="la la-ellipsis-v font-medium-3"></i></a>
+							<div class="heading-elements">
+								<ul class="list-inline mb-0">
+									<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+									<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+									<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+									<li><a data-action="close"><i class="ft-x"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="card-body">
+								<div class="form-body">
+									<div class="card-text"></div>
+								</div>
+								<h4 class="form-section">
+									<i class="ft-image"></i>Add Building Images
+								</h4>
+								<div class="row ">
+									<div class="col-md-12 ">
+										<div class="form-group col-6 mb-2 file-repeater">
+											<label for="companyinput8"></label>
+											<div data-repeater-list="repeater-list">
+												<div data-repeater-item>
+													<div class="row mb-1">
+														<div class="col-9 col-xl-10 ">
+															<div class="inputfile-box">
+																<input type="file" id="file" name="file"
+																	class="inputfile" multiple>
+															</div>
+														</div>
+														<div class="col-6 col-xl-1">
+															<button type="button" data-repeater-delete
+																class="btn btn-icon btn-danger mr-1">
+																<i class="ft-x"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<button type="button" data-repeater-create
+												class="btn btn-primary">
+												<i class="ft-plus"></i> Add Building Photos
+											</button>
+										</div>
+									</div>
+								</div>
+				
+				<h4 class="form-section" id="buildingimage_hide1">
+					<i class="ft-airplay"></i> Building Images
+				</h4>
+				<div id='idimage'>
+					<div class="row" id="buildimage" style="margin-left: 35px;"></div>
+				</div>
+				<div class="row ">
+					<div class="col-md-12 text-right " id="buildingimage_hide2">
+
+						<button onclick="myFunction()"
+							class="btn btn-glow btn-bg-gradient-x-red-pink col-12 col-md-2 mr-1 mb-1 url"  id="buttonupdate">Delete</button>
+					</div>
+				</div>
+				<div class="card-body  my-gallery" itemscope
+				>
+					<div class="row">
+						<div id='divContainer'></div>
+						<!-- <figure class="col-md-3 " itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" style=" max-width: 23.3%;">
+									<a href="app-assets/images/gallery/1.jpg" itemprop="contentUrl" data-size="480x360" stylr="    margin-left: -8px;">
+									<img class="img-thumbnail img-fluid" src="image/2018_12_27-14_46_31_069.png" id="image-zoom img" itemprop="thumbnail" alt="Image description"> </a></figure>
+								 -->
+						<!-- Root element of PhotoSwipe. Must have class pswp. -->
+						<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+							<!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+							<div class="pswp__bg"></div>
+
+							<!-- Slides wrapper with overflow:hidden. -->
+							<div class="pswp__scroll-wrap">
+
+								<!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+								<div class="pswp__container">
+									<div class="pswp__item"></div>
+									<div class="pswp__item"></div>
+									<div class="pswp__item"></div>
+								</div>
+
+								<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+								<div class="pswp__ui pswp__ui--hidden">
+
+									<div class="pswp__top-bar">
+
+										<!--  Controls are self-explanatory. Order can be changed. -->
+
+										<div class="pswp__counter"></div>
+
+										<button class="pswp__button pswp__button--close"
+											title="Close (Esc)"></button>
+
+										<button class="pswp__button pswp__button--share" title="Share"></button>
+
+										<button class="pswp__button pswp__button--fs"
+											title="Toggle fullscreen"></button>
+
+										<button class="pswp__button pswp__button--zoom"
+											title="Zoom in/out"></button>
+
+										<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+										<!-- element will get class pswp__preloader-active when preloader is running -->
+										<div class="pswp__preloader">
+											<div class="pswp__preloader__icn">
+												<div class="pswp__preloader__cut">
+													<div class="pswp__preloader__donut"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+										<div class="pswp__share-tooltip"></div>
+									</div>
+
+									<button class="pswp__button pswp__button--arrow--left"
+										title="Previous (arrow left)"></button>
+
+									<button class="pswp__button pswp__button--arrow--right"
+										title="Next (arrow right)"></button>
+
+									<div class="pswp__caption">
+										<div class="pswp__caption__center"></div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--/ PhotoSwipe -->
+				</div>
+
+			</div>
+		</div>
+		</section>
+		<!--/ Image grid -->
+</form>
+
+
+	</div>
+
+
+
+	</div>
+	</div>
+	<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+	<footer
+		class="footer footer-static footer-light navbar-border navbar-shadow">
+		<div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+			<span class="float-md-left d-block d-md-inline-block">2018
+				&copy; Copyright <a class="text-bold-800 grey darken-2" href="#"
+				target="_blank">plexussquare software solutions pvt ltd</a>
+			</span>
+
+		</div>
+	</footer>
+		<!-- BEGIN VENDOR JS-->
+	<script src="app-assets/vendors/js/vendors.min.js"
+		type="text/javascript"></script> 
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="app-assets/vendors/js/gallery/masonry/masonry.pkgd.min.js"
+		type="text/javascript"></script>
+	<script
+		src="app-assets/vendors/js/gallery/photo-swipe/photoswipe.min.js"
+		type="text/javascript"></script>
+	<script
+		src="app-assets/vendors/js/gallery/photo-swipe/photoswipe-ui-default.min.js"
+		type="text/javascript"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN CHAMELEON  JS-->
+	<script src="app-assets/js/core/app-menu.js" type="text/javascript"></script>
+<!-- 	<script src="app-assets/js/core/app.js" type="text/javascript"></script>
+ -->	<!-- END CHAMELEON  JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script
+		src="app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"
+		type="text/javascript"></script>
+	<!-- BEGIN PAGE LEVEL JS-->
+	<script src="app-assets/js/scripts/forms/form-repeater.js"
+		type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS-->
+	<script src="app-assets/vendors/js/forms/toggle/switchery.min.js"
+		type="text/javascript"></script>
+	<script
+		src="app-assets/js/scripts/gallery/photo-swipe/photoswipe-script.js"
+		type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS-->
+	<script src="sweetalert/sweetalert.min.js"></script>
+	
+ <script src="adminjs/getBuildingDeatils.js" type="text/javascript"></script>
+
+<script src="adminjs/deletebuildingimages.js" type="text/javascript"></script>
+
+ 
+	<script type="text/javascript">
+	jQuery(document).ready(function() {	
+			var response = window.location.search;
+			//alert(response); 
+			var url = response.replace("?", '');
+
+			var str = url.toString();
+			var res = str.split("%27").join("");
+
+			// alert("URL :" + res);
+			var msg = "temp-1";
+			var msg1 = "temp-0";
+			if ((res == msg)) {
+
+				swal({
+					title : "Failed to Update.!",
+					type : 'error'
+				}, function() {
+					// window.location = "AddBuildingDetails.html";
+				});
+
+			}
+
+			else if ((res == msg1)) {
+
+				swal({
+					title : "Buildling Details Updated Successfully.!",
+					type : 'success'
+				}, function() {
+					window.location = "BuildingList.html";
+				});
+			}
+		});
+	</script>
+ 
+</body>
+</html>

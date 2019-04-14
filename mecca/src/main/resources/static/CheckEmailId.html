@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">   
+    <title>PlexusSquare-Check Email-Id</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+     <link rel="stylesheet" href="admin_css/sweetalert.css" /> 
+    <link rel="stylesheet" type="text/css" href="admin_css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="admin_css/app.css">
+    <link rel="stylesheet" type="text/css" href="admin_css/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="admin_css/palette-gradient.css">
+  </head>
+  <body class="vertical-layout vertical-menu 1-column  bg-full-screen-image menu-expanded blank-page blank-page" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="1-column">
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+        </div>
+        <div class="content-body"><section class="flexbox-container">
+    <div class="col-12 d-flex align-items-center justify-content-center">
+        <div class="col-md-4 col-10 box-shadow-2 p-0">
+            <div class="card border-grey border-lighten-3 px-2 py-2 m-0">               
+                <div class="card-header border-0">
+                    <div class="text-center mb-1">                     
+             	<img src="logo/companylogo.png" alt="branding logo"
+											style="height: 120px; width: 160px;">
+							       </div>
+                     <div class="font-large-1  text-center">
+                        Forgot Password
+                    </div>            
+                </div>
+                 <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                        <span>  Type your Email-Id to reset your forgotten password</span>
+                    </h6>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form-horizontal" action=""  id="checkemail-id" autocomplete="off">
+                        <label for="complaintinput1">Email-Id</label>
+                            <fieldset class="form-group position-relative has-icon-left">
+                                <input type="email" class="form-control round" id="emailid" placeholder="Your Email Id" required="required">
+                                <div class="form-control-position">
+                                    <i class="ft-mail"></i>
+                                </div>
+                            </fieldset>                    
+                            <div class="form-group text-center">
+                                    <button type="submit" class="btn round btn-block btn-glow btn-bg-gradient-x-purple-blue col-12 mr-1 mb-1">Submit</button>
+                                </div>
+                                  <div class="card-footer border-0 p-0">
+                    <p class="float-sm-center text-center">Not a member ?
+                        <a href="register.html" class="card-link">Sign Up</a>
+                    </p>
+                </div>
+                        </form>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    <script src="admin_js/vendors.min.js" type="text/javascript"></script>
+    <script src="admin_js/sweetalert.min.js"></script>
+    <script src="admin_js/app-menu.js" type="text/javascript"></script>
+    <script src="admin_js/app.js" type="text/javascript"></script>
+      <script src="adminjs/checkemailid.js" type="text/javascript"></script>
+  	<script>
+		$(document).ready(function() {
+			window.history.pushState(null, "", window.location.href);
+			window.onpopstate = function() {
+				window.history.pushState(null, "", window.location.href);
+			};
+		
+		});
+	</script>
+  </body>
+</html>

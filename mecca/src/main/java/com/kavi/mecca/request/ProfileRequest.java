@@ -1,14 +1,15 @@
-package com.kavi.mecca.entity;
+package com.kavi.mecca.request;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-@Entity
-@Table(name="profile")
-public class Profile {
-	@Id
-	@GeneratedValue
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class ProfileRequest {
+
 	private Long id;
 	private String name;
 	private String phone_number;
@@ -35,6 +36,14 @@ public class Profile {
 	private String zip_code;
 	private String photo;
 	
+	private MultipartFile[] files;
+
+	public MultipartFile[] getFiles() {
+		return files;
+	}
+	public void setFiles(MultipartFile[] files) {
+		this.files = files;
+	}
 	private String aadhar_card;
 	private String pan_card;
 	
